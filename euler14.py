@@ -9,10 +9,11 @@ dic = {}
 for x in xrange(17,1000001):
 	print x
 	i = 0
+	tem = x
 	while x != 16:
 		x = calculate(x)
 		i += 1
-	dic[x] = i
+	dic[tem] = i
 	
 dic_new = sorted(dic.iteritems(), key = lambda d:d[1], reverse = True)
 
